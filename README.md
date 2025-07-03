@@ -42,6 +42,7 @@ Static web pages lack depth and interactivity. This project demonstrates a simpl
 ParalleX proves advanced effects are possible with minimal code, serving as a resource and template for web designers.
 
 ---
-**How to Run:** Open `index.html` in your browser.
+**How to Run:** Open `index.html` in your browser or Visit Here ![Here](https://pratt33.github.io/Parallex-effect/
+).
 
 **Author:** Pratik 
