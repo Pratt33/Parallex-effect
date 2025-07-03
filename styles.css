@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#wrapper {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    /* Enables 3D space for children */
+    perspective: 10px;
+}
+
+.container {
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Children maintain their 3D transforms */
+    transform-style: preserve-3d;
+}
+
+/* Common styles for both layers */
+.background,
+.foreground {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Background appears furthest */
+.background {
+    transform: translateZ(-40px) scale(5);
+}
+
+/* Foreground is closer than background */
+.foreground {
+    transform: translateZ(-20px) scale(3);
+}
